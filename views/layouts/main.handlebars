@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<html lang = "en-US">
+  <head>
+{{!--     <title>Travel Fernweh</title>
+    <link href="/assets/css/style.css" rel='stylesheet' type='text/css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="/assets/css/jquery.bxslider.css" type="text/css" />
+
+    <!---webfonts--->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!---webfonts--->
+    <!--start slider -->
+      <link rel="stylesheet" href="/assets/css/fwslider.css" media="all">
+
+    <!--end slider -->
+    <!---calender-style--->
+    <link rel="stylesheet" href="/assets/css/jquery-ui.css" /> --}}
+    <!---//calender-style--->
+    <!-- Latest compiled and minified CSS -->
+{{!--     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous"> --}}
+
+
+  </head>
+  <body>
+    <!---start-wrap--->
+
+    <!-- -start-top-header-> -->
+      <div class="top-header" id="header">
+        <div class="wrap">
+          <div class="top-header-left">
+            <ul>
+            {{#unless logged_in}}
+              <li><a href="/users/sign-in" ><span> </span> Members Login</a></li>
+              <li><p><span> </span>Not a Member ? </p>&nbsp;<a class="reg" href="/users/new"> Register</a></li>
+            {{/unless}}
+              {{#if logged_in}}
+              <li><p><span> </span>Welcome </p>&nbsp;</li>
+              <li><p><span> </span>Members </p>&nbsp; <a class="reg" href="/users/sign-out" > Sign Out</a></li>
+              {{/if}}
+              <li id="contactinfo"><p class="contact-info">Call Us Now :888-888-8888</p></li>
+              <div class="clear"> </div>
+            </ul>
+          </div>
+
+     {{!--      <div class="top-header-right">
+            <ul>
+              <li><a class="face" href="https://www.facebook.com/angel.trinh"><span> </span></a></li>
+              <li><a class="twit" href="https://twitter.com/trinhangel"><span> </span></a></li>
+              <li><a class="thum" href="http://castronautsabroad-blog.tumblr.com/"><span> </span></a></li>
+              <li><a class="pin" href="https://www.pinterest.com/angeltrinh/"><span> </span></a></li>
+              <div class="clear"> </div>
+            </ul>
+          </div>
+          <div class="clear"> </div>
+        </div> --}}
+      <div id="loginBox">
+
+      </div>
+
+      </div>
+
+      <!---//End-top-header--->
+      <!---start-header-->
+{{!--       <div class="header">
+        <div class="wrap">
+        <!--- start-logo--->
+          <div class="logo">
+            <a href="/"><img src="/assets/images/logo.png" alt="logo" title="voyage" style="max-width: 100px;"/></a>
+          </div>
+        <!--- //End-logo--->
+        <!--- start-top-nav--->
+          <div class="top-nav">
+            <ul class="flexy-menu thick orange">
+              <li class="active"><a href="/">Home</a></li>
+              <li><a href="/cities">cities</a>
+                <ul>
+                <li><a href="/cities/Barcelona">Barcelona</a></li>
+                <li><a href="/cities/Berlin">Berlin</a></li>
+                <li><a href="/cities/Paris">Paris</a></li>
+                </ul>
+              </li>
+
+              <li><a href="/contact">Contact</a></li>
+
+            </ul>
+
+          </div> --}}
+        <!--- //End-top-nav--->
+          <div class="clear"> </div>
+{{!--         </div>
+ --}}      <!---//End-header--->
+{{!--       </div>
+ --}}
+    {{{ body }}}
+
+
+    <!---start-footer--->
+  {{!--   <div id="photos"></div>
+    <div class="footer">
+      <div class="wrap footer-grids">
+        <div class="footer-grid Newsletter">
+          <h3>Travel Fernweh </h3>
+          <p>Travel Fernweh is here to help you with planning your trip! Be sure to check out Barcelona, Berlin, or Paris! </p> --}}
+          {{!-- <form>
+            <input type="text" placeholder="Subscribes.." /> <input type="submit" value="GO" />
+          </form> --}}
+        {{!-- </div>
+        <div class="footer-grid Newsletter">
+          <h3>Latest News </h3>
+          <div class="news">
+            <div class="news-pic">
+              <img src="/assets/images/f01.jpg" alt = "news" title="news-pic1" />
+            </div>
+            <div class="news-info">
+              <a href="/cities">Paris is now available!</a>
+              <span>July 27, 2016</span>
+            </div>
+            <div class="clear"> </div>
+          </div>
+
+          <div class="clear"> </div>
+          </div>
+
+          <div class="footer-grid tags">
+            <h3>Tags</h3>
+            <ul>
+              <li><a href="/users/sign-in">Login</a></li>
+              <li><a href="/users/new"> Not a member? Register </a></li>
+              <li><a href="/cities">Cities</a></li>
+              <li><a href="/contact">Contact</a></li>
+              <li><a href="https://www.facebook.com/angel.trinh">Facebook</a></li>
+              <li><a href="https://github.com/angelica3010">GitHub</a></li>
+              <li><a href="https://www.pinterest.com/angeltrinh/">Pinterest</a></li>
+              <li><a href="https://www.linkedin.com/in/angeltrinh">LinkedIn</a></li>
+              <li><a href="https://twitter.com/trinhangel">Twitter</a></li>
+              <div class="clear"> </div>
+            </ul>
+          </div>
+          <div class="footer-grid address">
+            <h3>Address </h3>
+            <div class="address-info">
+              <span>147 Harborside Drive </span><br>
+              <span>Jersey City, New Jersey 07302 </span><br>
+
+            </div>
+          <div class="footer-social-icons">
+            <ul>
+              <li><a class="face1 simptip-position-bottom simptip-movable" data-tooltip="facebook" href="https://www.facebook.com/angel.trinh"><span> </span></a></li>
+              <li><a class="twit1 simptip-position-bottom simptip-movable" data-tooltip="twitter" href="https://twitter.com/trinhangel"><span> </span></a></li>
+              <li><a class="tub1 simptip-position-bottom simptip-movable" data-tooltip="tumblr" href="http://castronautsabroad-blog.tumblr.com/"><span> </span></a></li>
+              <li><a class="pin1 simptip-position-bottom simptip-movable" data-tooltip="pinterest" href="https://www.pinterest.com/angeltrinh/"><span> </span></a></li>
+              <div class="clear"> </div>
+            </ul>
+          </div>
+        </div>
+        <div class="clear"> </div>
+      </div>
+
+    </div>
+    <!---//End-footer--->
+    <!---start-subfooter--->
+    <div class="subfooter">
+      <div class="wrap">
+        <ul>
+          <li><a href="/">Home</a><span>::</span></li>
+          <li><a href="/cities">Cities</a><span>::</span></li>
+          <li><a href="/contact">Contact Us</a></li>
+          <div class="clear"> </div>
+        </ul>
+        <p class="copy-right"> &copy; 2016 Travel Fernweh </p>
+        <a class="to-top" href="#header"><span> </span> </a>
+      </div>
+    </div> --}}
+
+<!---search-scripts--->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
+
+{{!--     // <script src="/assets/js/modernizr.custom.js"></script>
+    // <script src="/assets/js/classie.js"></script>
+
+    // <script src="/assets/js/scripts.js">
+    // </script>
+    // <!---//search-scripts--->
+
+
+    // <script src="/assets/js/jquery-ui.min.js"></script>
+    // <script src="/assets/js/css3-mediaqueries.js"></script>
+    // <script src="/assets/js/fwslider.js"></script>
+    // <script type="text/javascript" src="/assets/js/flexy-menu.js"></script>
+    // <script type="text/javascript">$(document).ready(function(){$(".flexy-menu").flexymenu({speed: 400,type: "horizontal",align: "right"});});</script>
+    // <!---/End-top-nav-script--->
+
+    // <script src="http://www.panoramio.com/wapi/wapi.js"></script>
+    // <script src="/assets/js/slider.js"></script> --}}
+
+  <!-- Latest compiled and minified JavaScript -->
+   {{!--  // <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script> --}}
+  </body>
+</html>
