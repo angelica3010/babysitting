@@ -23,8 +23,26 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <link rel="stylesheet" type="text/css" href="css/lc.css">
+    <link href='https://fonts.googleapis.com/css?family=Timmana' rel='stylesheet' type='text/css'>
 
 </head>
+<header>
+    <h2>BabySitting</h2>
+    <button class="hamburger">&#9776;</button>
+    <button class="cross">&#735;</button>
+  </header>
+
+
+    <div class="menu">
+        <ul>
+          <a href="#"><li><a href="Feed.html">My Feed</a></li></a>
+          <a href="#"><li><a href="momprofile.html">My Profile</a></li></a>
+        </ul>
+    </div>
+
+
+</div>
 
 <body>
 
@@ -195,6 +213,61 @@
         </div>
     </div>
 
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Babysitter Profile
+<!--                     <small>Volunteer Results</small>
+ -->                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Project One -->
+        <div class="row">
+            <div class="col-md-7">
+                <a href="#">
+                    <img class="img-responsive" src="https://pbs.twimg.com/profile_images/830522118580342784/OGpbscaA.jpg" alt="math">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3> Heather Wu</h3>
+
+                <p>Heather has 2 years of experience babysitting. </p>
+                <a class="btn btn-primary" data-toggle="modal" data-target="#math">Details</a>
+            </div>
+        </div>
+
+    <div id="math" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+        <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title whtText"> Contact Information</h4>
+                </div>
+                <div class="modal-body">
+                    <table class="hosteltable">
+                        <tr>
+                        <!--     <th><b>Organization</b></th>
+                            <th><b>Contact Name</b></th>
+                            <th><b>Address</b></th> -->
+                            <th><b>Phone Number</b></th>
+                            <th></b>Feedback</th>
+                        </tr>
+                            <tr>
+                               <!--  <td>Aaron School</td>
+                                <td>Roberta Palumbo</td>
+                                <td>309 E 45 Street New York, NY 10017</td> -->
+                                <td>(212) 867-9804 </td>
+                                <td>She is great at cooking and my kids love her!  </td>
+                            </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 <!--     <div id="english" class="modal fade" role="dialog">
         <div class="modal-dialog">
         <!- Modal content-->
@@ -356,6 +429,11 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+   <script src="js/index.js"></script>
 
 </body>
 
