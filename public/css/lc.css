@@ -109,6 +109,11 @@ p{
     padding-left: 20px;
     width:25%;
 }
+#moms{
+  margin-top: 100px;
+  height: 500px;
+  width: 500px;
+}
 @media screen and (min-width: 1440px){
     #contact{
         float:left;

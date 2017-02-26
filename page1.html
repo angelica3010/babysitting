@@ -9,6 +9,19 @@
   $( function() {
     $( "#datepicker" ).datepicker();
   } );
+  FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+  });
+  {
+    status: 'connected',
+    authResponse: {
+        accessToken: '...',
+        expiresIn:'...',
+        signedRequest:'...',
+        userID:'...'
+    }
+}
+
 
 
 
@@ -23,6 +36,8 @@
 <body>
 
 <p>Date: <input type="text" id="datepicker"></p>
+
+
 
 </body>
 </html>
